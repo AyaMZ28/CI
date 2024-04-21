@@ -1,23 +1,8 @@
-# Use the official WordPress image as base
+# Use the official WordPress image as the base image
 FROM wordpress:latest
-
-# Set up environment variables for MySQL
-ENV MYSQL_ROOT_PASSWORD=root
-ENV MYSQL_DATABASE=wordpress
-ENV MYSQL_USER=wordpress
-ENV MYSQL_PASSWORD=wordpress
-
-# Add a volume for MySQL data persistence
-VOLUME /var/lib/mysql
-
-# Install the mysqli extension for PHP
-RUN docker-php-ext-install mysqli
-
-# Copy the custom php.ini file to the container
-COPY php.ini /usr/local/etc/php/conf.d/
-
-# Expose ports
-EXPOSE 80
 
 # Set the working directory to /var/www/html
 WORKDIR /var/www/html
+
+# Copy the contents of the local wp-content directory to the container's wp-content directory
+COPY ./wp-content /var/www/html/wp-content
