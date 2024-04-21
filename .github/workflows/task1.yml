@@ -21,5 +21,7 @@ jobs:
       - name: list files 
         run: ls -l
 
-      - name: Docker Image
+      - name: Run Docker Image
         run: docker-compose up -d
+
+      #- name: name image
