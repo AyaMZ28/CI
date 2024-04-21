@@ -5,4 +5,5 @@ FROM wordpress:latest
 WORKDIR /var/www/html
 
 # Copy the contents of the local wp-content directory to the container's wp-content directory
-COPY ./wp-content /var/www/html/wp-content
+#COPY ./wp-content /var/www/html/wp-content
+
