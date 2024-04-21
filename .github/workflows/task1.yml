@@ -22,6 +22,6 @@ jobs:
         run: ls -l
 
       - name: Run Docker Image
-        run: docker-compose up -d
+        uses: hoverkraft-tech/compose-action@v0.0.0
 
       #- name: name image
