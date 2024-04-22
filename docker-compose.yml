@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: your-username/wordpress-with-db:latest
+    image: ayaz000/wordpress500:latest
     ports:
       - "8087:80"
     volumes:
