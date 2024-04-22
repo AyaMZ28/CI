@@ -25,6 +25,6 @@ jobs:
         uses: hoverkraft-tech/compose-action@v1.5.1
 
       - name: push image
-        run: docker pull ayaz000/wordpress500:latest
+        run: docker push ayaz000/wordpress500:latest
     
         
