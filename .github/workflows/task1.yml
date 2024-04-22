@@ -24,4 +24,6 @@ jobs:
       - name: Run Docker Image
         uses: hoverkraft-tech/compose-action@v1.5.1
 
-      #- name: name image
+      - name: push image
+        uses: docker/build-push-action@v5
+        
