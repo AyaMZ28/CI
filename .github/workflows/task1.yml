@@ -26,5 +26,8 @@ jobs:
 
       - name: push image
         run: docker push ayaz000/wordpress500:latest
-    
+      
+      - name: Deploy using K8s
+        run: kubectl apply -f wordpress-deployment.yaml
+
         
